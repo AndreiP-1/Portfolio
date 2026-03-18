@@ -1,121 +1,105 @@
-/* GLOBAL */
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #0f1117;
-    color: #e6edf3;
+/* --- CONFIGURATION GÉNÉRALE --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-dark: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --accent-blue: #3b82f6;
+    
+    /* Couleurs des sections style "Notion" */
+    --clr-pres: #3b82f6;   /* Bleu */
+    --clr-form: #22c55e;   /* Vert */
+    --clr-exp: #f59e0b;    /* Orange */
+    --clr-proj: #8b5cf6;   /* Violet */
+    --clr-comp: #ec4899;   /* Rose */
+    --clr-lang: #06b6d4;   /* Cyan */
+    --clr-inter: #ef4444;  /* Rouge */
 }
 
-/* HEADER */
+* {
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- HEADER --- */
 .hero {
-    background: linear-gradient(120deg, #0f172a, #1e293b);
-    padding: 50px 20px;
-    text-align: center;
-    border-bottom: 1px solid #1f2937;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
 }
 
 .hero h1 {
+    font-size: 2.5rem;
     margin: 0;
-    font-size: 2.5em;
 }
 
 .hero p {
-    margin-top: 10px;
-    color: #94a3b8;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 5px;
 }
 
-/* CONTAINER */
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* SECTIONS (style Notion) */
+/* --- SECTIONS --- */
 .section {
-    background-color: #161b22;
+    background: var(--card-bg);
+    margin-bottom: 16px;
     padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    border-left: 5px solid #3b82f6;
-    transition: 0.3s;
+    border-radius: 12px;
+    border-left: 6px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .section:hover {
-    background-color: #1c2128;
+    transform: translateX(8px);
+    background: #222;
 }
 
-/* TITRES */
-h2 {
+.section h2 {
     margin-top: 0;
-    color: #58a6ff;
-}
-
-/* LISTES */
-ul {
-    padding-left: 20px;
-}
-
-/* PROJETS (scroll horizontal) */
-.projects {
+    font-size: 1.3rem;
     display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    padding-top: 10px;
+    align-items: center;
+    gap: 10px;
 }
 
-/* CARTES PROJETS */
+/* Couleurs spécifiques par ordre d'apparition */
+.section:nth-of-type(1) { border-left-color: var(--clr-pres); }
+.section:nth-of-type(2) { border-left-color: var(--clr-form); }
+.section:nth-of-type(3) { border-left-color: var(--clr-exp); }
+.section:nth-of-type(4) { border-left-color: var(--clr-proj); }
+.section:nth-of-type(5) { border-left-color: var(--clr-comp); }
+.section:nth-of-type(6) { border-left-color: var(--clr-lang); }
+.section:nth-of-type(7) { border-left-color: var(--clr-inter); }
+.section:nth-of-type(8) { border-left-color: var(--accent-blue); }
+
+/* --- GRILLE DE PROJETS --- */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .card {
-    min-width: 200px;
-    height: 120px;
-    background: linear-gradient(145deg, #1f2937, #111827);
-    border-radius: 12px;
-    padding: 15px;
-    color: #e5e7eb;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.card h3 {
-    margin: 0;
-    font-size: 1.1em;
-}
-
-.card p {
-    font-size: 0.9em;
-    margin-top: 8px;
-    color: #9ca3af;
-}
-
-.card:hover {
-    transform: translateY(-5px) scale(1.03);
-    background: linear-gradient(145deg, #3b82f6, #2563eb);
-    color: white;
-}
-
-/* SCROLL BAR (optionnel stylé) */
-.projects::-webkit-scrollbar {
-    height: 6px;
-}
-
-.projects::-webkit-scrollbar-thumb {
-    background: #3b82f6;
+    background: #252525;
+    padding: 20px;
     border-radius: 10px;
-}
-
-/* CONTACT */
-.section p {
-    line-height: 1.5;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .card {
-        min-width: 150px;
-    }
+    border: 1px solid #333;
+    height:
 }
