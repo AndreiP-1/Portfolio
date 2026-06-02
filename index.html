@@ -3,171 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Andrei POP</title>
+    <title>Andrei Pop — Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-    <div class="hero-container">
-        <img src="photo_andrei.png" alt="Andrei POP" class="profile-pic">
-        <div class="hero-text">
-            <h1>Andrei POP</h1>
-            <p class="subtitle">Étudiant en BUT Informatique — Développeur d'Applications</p>
-            <p class="tagline">"Passionné par la résolution de problèmes complexes et la conception d'architectures logicielles rigoureuses."</p>
-        </div>
-    </div>
-</header>
-
-<main class="container">
-
-    <section class="section">
-        <h2>📌 Présentation</h2>
-        <p>
-            Je m'appelle <strong>Andrei POP</strong>, j'ai 19 ans et je suis actuellement en première année de <strong>BUT Informatique à l'IUT d'Orsay</strong> (Université Paris-Saclay). 
-        </p>
-        <p>
-            Dans le cadre de ma formation, je prépare activement mon passage en deuxième année (Parcours A : Réalisation d'applications : conception, développement, validation). Je suis à la recherche d'un <strong>contrat d'apprentissage de 24 mois</strong> à partir de septembre 2026, selon un rythme de 2 jours en entreprise et 3 jours à l'IUT. Mon objectif est d'apporter ma rigueur logique au sein d'une équipe technique tout en consolidant mes compétences d'ingénierie logicielle.
-        </p>
-    </section>
-
-    <section class="section">
-        <h2>🎓 Parcours Scolaire & Universitaire</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <span class="date">Sept. 2026</span>
-                <p><strong>Entrée en 2ème année de BUT Informatique (En Apprentissage)</strong> — IUT d'Orsay, Université Paris-Saclay (Gif-sur-Yvette)</p>
-                <span class="details">Parcours A : Réalisation d'applications.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="date">2025 - 2026</span>
-                <p><strong>1ère année de BUT Informatique</strong> — IUT d'Orsay, Université Paris-Saclay (Gif-sur-Yvette)</p>
-                <span class="details">Bases de l'algorithmique, programmation orientée objet, systèmes et réseaux, bases de données.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="date">2025</span>
-                <p><strong>Baccalauréat Général</strong> — Lycée Jacques Prévert (Longjumeau)</p>
-                <span class="details">Spécialités : Mathématiques et Numérique et Sciences Informatiques (NSI). Mention Assez Bien.</span>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Andrei Pop</a>
+            <div class="nav-links">
+                <a href="#parcours">Parcours</a>
+                <a href="#langues">Langues</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#interets">Intérêts</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="section">
-        <h2>🛠️ Compétences Métiers</h2>
-        
-        <h3>💻 Informatiques</h3>
-        <ul class="skills-list">
-            <li><strong>Développement Web :</strong> HTML5, CSS3</li>
-            <li><strong>Développement Logiciel :</strong> C++, Python, Java</li>
-            <li><strong>Bases de données :</strong> SQL, SQLite, Oracle SQL Developer</li>
-            <li><strong>Environnements & Outils :</strong> Git, Eclipse, PyCharm, CodeBlocks, Visual Paradigm (UML), Penpot</li>
-            <li><strong>Systèmes d'exploitation :</strong> Windows, Linux (Debian/Ubuntu, administration CLI)</li>
-        </ul>
+    <main class="main-container">
 
-        <h3>🌍 Compétences Linguistiques (Cadre Européen CECRL)</h3>
-        <div class="languages-grid">
-            <div class="lang-card"><span class="lang-badge">C2</span> <strong>Roumain :</strong> Maternelle / Bilingue</div>
-            <div class="lang-card"><span class="lang-badge">B2</span> <strong>Anglais :</strong> Niveau Intermédiaire Supérieur (Technique & Professionnel)</div>
-            <div class="lang-card"><span class="lang-badge">A2/B1</span> <strong>Espagnol :</strong> Niveau Seuil</div>
-        </div>
-    </section>
+        <header id="intro" class="hero-section">
+            <div class="hero-header">
+                <img src="photo_andrei.jpg" alt="Andrei POP" class="hero-avatar">
+                <div class="hero-title-block">
+                    <h1>Andrei Pop</h1>
+                    <p class="hero-subtitle">Étudiant en BUT Informatique • IUT d'Orsay</p>
+                    <div class="status-badge">🎯 En recherche d'apprentissage (24 mois) • Septembre 2026</div>
+                </div>
+            </div>
+            
+            <div class="intro-card">
+                <p>Actuellement en première année de <strong>BUT Informatique à l'IUT d'Orsay (Université Paris-Saclay)</strong>, je prépare mon orientation vers le <strong>Parcours A : Réalisation d'applications</strong>.</p>
+                <p>Sérieux et passionné par la logique algorithmique, je cherche une alternance de deux ans (rythme : 2 jours en entreprise / 3 jours à l'IUT) pour mettre mes compétences au service d'une équipe technique.</p>
+            </div>
+        </header>
 
-    <section class="section">
-        <h2>💻 Projets Académiques & Réalisations</h2>
-        <p class="project-intro"><em>Cliquez sur les titres pour accéder aux dépôts de code et preuves de réalisation.</em></p>
-        
-        <div class="projects">
-            <div class="card">
-                <h3><a href="https://github.com/AndreiPop/jeu-cpp-sprites" target="_blank" class="project-link">🎮 Jeu 2D Interactif en C++</a></h3>
-                <p>Conception et développement d'un jeu vidéo de simulation et de stratégie en C++.</p>
-                <ul>
-                    <li>Gestion des animations via des feuilles de sprites et calcul des mouvements directionnels.</li>
-                    <li>Implémentation d'une Intelligence Artificielle (IA) de base pour le comportement des ennemis.</li>
-                    <li>Algorithme de gestion dynamique des collisions complexes (entités et obstacles de carte).</li>
-                    <li>Système d'augmentation progressive de la difficulté par paliers de niveaux.</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">C++</span><span class="tag">Sprites</span><span class="tag">POO</span><span class="tag">Algorithmique</span>
+        <section id="parcours" class="section-block">
+            <h2 class="section-title">🎓 Parcours & Objectifs</h2>
+            <div class="timeline">
+                <div class="timeline-row">
+                    <div class="time-date">Septembre 2026 — 2028</div>
+                    <div class="time-desc">
+                        <h4>BUT Informatique (Deuxième et troisième année)</h4>
+                        <p>IUT d'Orsay, Université Paris-Saclay — Parcours A : Réalisation d'applications (Visée en alternance).</p>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="time-date">2025 — 2026</div>
+                    <div class="time-desc">
+                        <h4>BUT Informatique (Première année)</h4>
+                        <p>IUT d'Orsay — Apprentissage approfondi de l'algorithmique, programmation orientée objet, systèmes et réseaux.</p>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="time-date">Diplômé en 2025</div>
+                    <div class="time-desc">
+                        <h4>Baccalauréat Général</h4>
+                        <p>Lycée Jacques Prévert (Longjumeau) — Spécialités Mathématiques et NSI. <strong>Mention Bien</strong>.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <h3><a href="https://github.com/AndreiPop/systeme-information-sql" target="_blank" class="project-link">🗄️ Modélisation et Implémentation de Base de Données</a></h3>
-                <p>Analyse d'un besoin métier pour concevoir une architecture de données robuste.</p>
-                <ul>
-                    <li>Étude et formalisation d'un Système d'Information (Modèles Conceptuels de Données).</li>
-                    <li>Écriture de scripts d'insertion (DML) et génération d'un jeu de données de test cohérent.</li>
-                    <li>Création de requêtes d'interrogation SQL avancées (jointures multiples, agrégations, sous-requêtes).</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">SQL</span><span class="tag">SQLite</span><span class="tag">Oracle</span><span class="tag">Modélisation</span>
+            <div class="ambitions-card">
+                <h4>🎯 Ambitions professionnelles & Poursuite d'études</h4>
+                <p>Mon objectif à court terme est de valider mon BUT en apprentissage. À moyen et long terme, j'envisage de poursuivre en école d'ingénieurs ou Master afin d'évoluer vers les métiers d'ingénieur d'études, développeur logiciel ou architecte applicatif.</p>
+            </div>
+        </section>
+
+        <section id="langues" class="section-block">
+            <h2 class="section-title">🌐 Compétences Linguistiques</h2>
+            <div class="languages-card">
+                <p class="languages-intro">Évaluation basée sur le Cadre européen commun de référence pour les langues (CECRL) :</p>
+                <div class="languages-grid-row">
+                    <div class="lang-item">
+                        <div class="lang-info">
+                            <h4>Roumain</h4>
+                            <p>Langue maternelle — Niveau <strong>C2</strong></p>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-info">
+                            <h4>Anglais</h4>
+                            <p>Usage technique & pro — Niveau <strong>B2</strong></p>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-info">
+                            <h4>Espagnol</h4>
+                            <p>Niveau scolaire — Niveau <strong>A2/B1</strong></p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3><a href="https://github.com/AndreiPop/installation-poste-iot" target="_blank" class="project-link">⚡ Déploiement d'un Poste de Développement Linux</a></h3>
-                <p>Configuration système complète orientée développement sur architecture matérielle embarquée.</p>
-                <ul>
-                    <li>Manipulation, flashage et initialisation d'un micro-ordinateur Raspberry Pi.</li>
-                    <li>Gestion fine des privilèges : configuration des utilisateurs, groupes et permissions Unix.</li>
-                    <li>Sécurisation des accès distants par le déploiement de clés de chiffrement SSH.</li>
-                    <li>Automatisation réseau : configuration d'un service de synchronisation d'horloge (NTP).</li>
-                </ul>
-                <div class="tags">
-                    <span class="tag">Linux</span><span class="tag">Raspberry Pi</span><span class="tag">SSH</span><span class="tag">Système & Réseau</span>
+        <section id="competences" class="section-block">
+            <h2 class="section-title">🛠️ Stack Technique</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Langages de programmation</h4>
+                    <p>C++, Python, Java, HTML5, CSS3, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Systèmes & Bases de données</h4>
+                    <p>Linux (CLI), Windows, SQLite, Oracle SQL Developer</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Outils & IDE</h4>
+                    <p>Git, CodeBlocks, PyCharm, Eclipse, Penpot</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section">
-        <h2>🎯 Projet Professionnel & Ambitions</h2>
-        <div class="ambitions-box">
-            <p><strong>🚀 Court terme (1-2 ans) :</strong> Réussir mon alternance de BUT en entreprise, acquérir une forte rigueur méthodologique en développement (méthodes agiles, CI/CD, tests unitaires) et valider mon diplôme de BUT Informatique.</p>
-            <p><strong>🎓 Moyen terme (3-5 ans) :</strong> Poursuivre mes études en Cycle d'Ingénieur ou en Master Informatique en apprentissage afin de me spécialiser dans l'architecture logicielle ou le DevOps.</p>
-            <p><strong>💼 Long terme :</strong> Évoluer vers un poste de Lead Developer ou de Consultant en Architecture des Systèmes d'Information, en concevant des applications hautement scalables et sécurisées.</p>
-        </div>
-    </section>
+        <section id="projets" class="section-block">
+            <h2 class="section-title">💻 Projets Académiques </h2>
+            <div class="projects-list">
+                
+                <!-- PROJET 1 : COMWAVE -->
+                <div class="project-card featured-project">
+                    <div class="project-columns">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <h3>Projet COM.WAVE — Agence de Voyage</h3>
+                                <span class="tech-tag spec">HTML5 / CSS3 / Flexbox</span>
+                            </div>
+                            <div class="star-method">
+                                <p><strong>Situation :</strong> Projet de synthèse en équipe de création d'une start-up d'agence de voyage innovante à l'IUT d'Orsay.</p>
+                                <p><strong>Tâche :</strong> Concevoir l'identité visuelle de la marque et développer un site Web vitrine adaptatif complet, fluide sur mobile et desktop, conforme aux validations W3C.</p>
+                                <p><strong>Action :</strong> Maquettage, structuration sémantique des pages, écriture du code CSS (intégration de Flexbox/Grid et media queries pour le responsive) et déploiement sur les serveurs de l'IUT.</p>
+                                <p><strong>Résultat :</strong> Un site web vitrine moderne et fonctionnel, hébergé sur le domaine universitaire.</p>
+                            </div>
+                            <div class="project-links-group">
+                                <span class="internal-link-note">🌐 Déployé sur : https://webdev.iut-orsay.fr/~apop2/comwave/ </span>
+                            </div>
+                        </div>
+                        <div class="project-media-block">
+                            <img src="projetweb.png" alt="Image du projet COM.WAVE" class="project-img">
+                        </div>
+                    </div>
+                </div>
 
-    <section class="section">
-        <h2>🎨 Centres d’Intérêt & Hobbies</h2>
-        <ul class="interests-list">
-            <li><strong>⚽ Sports collectifs & Endurance :</strong> Pratique régulière du football en club et entre amis (depuis plus de 5 ans), développant l'esprit d'équipe, la communication sur le terrain et la cohésion. Pratique de la natation pour la discipline.</li>
-            <li><strong>🧠 Jeux de stratégie et de réflexion :</strong> Passionné par les échecs et les jeux vidéo de stratégie (RTS, tactique). Cela stimule mon sens de la planification, l'adaptation rapide face à un problème et la logique algorithmique.</li>
-            <li><strong>📚 Lecture & Culture Geek :</strong> Lecture régulière d'ouvrages scientifiques, de revues technologiques et de mangas de type Seinen (axés sur des intrigues complexes et psychologiques).</li>
-        </ul>
-    </section>
+                <div class="project-card">
+                    <div class="project-columns">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <h3>Jeu interactif 2D</h3>
+                                <span class="tech-tag">C++ / POO</span>
+                            </div>
+                            <div class="star-method">
+                                <p><strong>Situation :</strong> Projet académique de fin de semestre visant à concevoir une application graphique interactive robuste.</p>
+                                <p><strong>Tâche :</strong> Modéliser et programmer un jeu en 2D intégrant des mécaniques d'animation, de collision et une IA ennemie.</p>
+                                <p><strong>Action :</strong> Implémentation des principes de la POO, développement algorithmique des calculs de collisions en temps réel et animation de feuilles de sprites.</p>
+                                <p><strong>Résultat :</strong> Un jeu fluide et multiniveau entièrement fonctionnel.</p>
+                            </div>
+                        </div>
+                        <div class="project-media-block">
+                            <img src="projetcplusplus.png" alt="Rendu graphique du Jeu 2D" class="project-img">
+                        </div>
+                    </div>
+                </div>
 
-    <section class="section bonus-section">
-        <h2>✨ Parcours Professionnel & Expériences Annexes (Bonus)</h2>
-        <div class="work-experience">
-            <h4>Stage d'Observation Professionnelle — Entreprise ECBE (2021)</h4>
-            <p class="work-place"><em>Chantier institutionnel de grande envergure pour le Ministère de la Culture</em></p>
-            <ul>
-                <li>Observation active de la gestion de projet et du déploiement opérationnel sur un site hautement sécurisé.</li>
-                <li>Découverte de la répartition claire des tâches, des flux de responsabilités et de l'importance de la ponctualité stricte sur un projet d'équipe.</li>
-                <li>Sensibilisation forte au respect des protocoles de sécurité rigoureux.</li>
-            </ul>
-        </div>
-        <div class="recommendation-notice">
-            <p>💡 <em>Lettre de recommandation ou références de l'IUT d'Orsay disponibles sur demande (Contact Référent CFA Numia : Xavier CRENN).</em></p>
-        </div>
-    </section>
+                <div class="project-card">
+                    <div class="project-columns">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <h3>Modélisation & Implémentation d'une BDD</h3>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                            <div class="star-method">
+                                <p><strong>Situation :</strong> Simulation d'un besoin de structuration de données logistiques et clients pour une entreprise en activité.</p>
+                                <p><strong>Tâche :</strong> Concevoir de A à Z le schéma relationnel et optimiser l'accès aux informations stockées.</p>
+                                <p><strong>Action :</strong> Création du modèle conceptuel, écriture des scripts de création de tables, injection de jeux d'essais complets et élaboration de requêtes complexes (jointures, agrégations).</p>
+                                <p><strong>Résultat :</strong> Une base relationnelle saine, performante et exempte de redondances.</p>
+                            </div>
+                        </div>
+                        <div class="project-media-block">
+                            <img src="projetbd.png" alt="Illustration Modèle Base de données" class="project-img contain">
+                        </div>
+                    </div>
+                </div>
 
-    <section class="section">
-        <h2>📞 Nous Contacter</h2>
-        <div class="contact-grid">
-            <p>📧 <strong>Email :</strong> <a href="mailto:andrei.pop.cv@gmail.com">andrei.pop.cv@gmail.com</a></p>
-            <p>📱 <strong>Téléphone :</strong> +33 7 83 13 23 18</p>
-            <p>📍 <strong>Localisation :</strong> Longjumeau (91160), Île-de-France</p>
-            <div class="contact-links">
-                <a href="#" class="btn-link">🔗 Mon Profil LinkedIn</a>
-                <a href="#" class="btn-link repo-btn">📁 Dépôt GitHub GitHub</a>
+                <!-- PROJET 4 : LINUX -->
+                <div class="project-card">
+                    <div class="project-columns">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <h3>Administration d'un Poste Dev</h3>
+                                <span class="tech-tag">Linux / ARM</span>
+                            </div>
+                            <div class="star-method">
+                                <p><strong>Situation :</strong> Nécessité de déployer et de sécuriser un poste de développement distant sur une architecture de type système embarqué.</p>
+                                <p><strong>Tâche :</strong> Configurer un système d'exploitation Linux propre, gérer les utilisateurs et verrouiller le réseau.</p>
+                                <p><strong>Action :</strong> Administration via CLI, gestion granulaire des droits des utilisateurs/groupes, génération et déploiement de clés SSH, et automatisation du protocole horaire NTP.</p>
+                                <p><strong>Résultat :</strong> Un environnement de développement distant stable, sécurisé et prêt pour la production.</p>
+                            </div>
+                        </div>
+                        <div class="project-media-block">
+                            <img src="projetlinux.jpg" alt="Administration Linux Raspberry Pi" class="project-img">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-</main>
+        <section id="interets" class="section-block">
+            <h2 class="section-title">🎨 Centres d'Intérêt </h2>
+            <div class="interests-minimal-grid">
+                
+                <div class="interest-mini-card">
+                    <span class="interest-icon">🎮</span>
+                    <div class="interest-text">
+                        <h4>Jeux vidéo & Stratégie</h4>
+                        <p>Analyse de patterns complexes (Quête de chasse des trophées de Platine sur les jeux conçus par FromSoftware), coopération en équipe sur des jeux compétitifs et gestion de serveurs multijoueurs (<em>Minecraft</em>).</p>
+                    </div>
+                </div>
+
+                <div class="interest-mini-card">
+                    <span class="interest-icon">⚽</span>
+                    <div class="interest-text">
+                        <h4>Sports & Discipline</h4>
+                        <p>Esprit d'équipe et endurance développés par 2 ans de football en club et 3 ans de natation régulière.</p>
+                    </div>
+                </div>
+
+                <div class="interest-mini-card">
+                    <span class="interest-icon">📚</span>
+                    <div class="interest-text">
+                        <h4>Lecture & Univers</h4>
+                        <p>Étude des structures narratives et des univers complexes à travers les mangas de types Shonen et Seinen.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-block">
+            <h2 class="section-title">📬 Coordonnées & Contact</h2>
+            <div class="contact-card">
+                <div class="contact-grid">
+                    <div class="contact-detail"><span>Courriel :</span> andrei.pop.cv@gmail.com</div>
+                    <div class="contact-detail"><span>Téléphone :</span> +33 7 83 13 23 18</div>
+                    <div class="contact-detail"><span>Localisation :</span> Longjumeau (91160)</div>
+                    <div class="contact-detail"><span>Mobilité :</span> Permis B (en cours)</div>
+                </div>
+                
+                <div class="contact-networks">
+                    <h4>🌐 Profils professionnels & Réseaux :</h4>
+                    <div class="networks-flex">
+                        <a href="https://github.com/AndreiP-1" target="_blank" class="net-link gh">
+                            <span>GitHub</span> • github.com/AndreiP-1
+                        </a>
+                        <a href="https://www.linkedin.com/in/andrei-pop-636432388/" target="_blank" class="net-link ln">
+                            <span>LinkedIn</span> • linkedin.com/in/andrei-pop-636432388
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Andrei Pop.</p>
+    </footer>
 
 </body>
 </html>
